@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main(void)
+{
+    float x;
+    printf("x:");
+    scanf ("%f", &x);
+ 
+    float y=4*(x-3)*(x-3)*(x-3)*(x-3)*(x-3)*(x-3)-7*(x-3)*(x-3)*(x-3)+2;
+ 
+    printf("y:%f\n",y);
+ 
+    return 0;
+}
+ 
