@@ -1,14 +1,21 @@
-import random
-
-a = int(input())
-b = int(input())
-print("a = ", a)
-print("b = ", b)
-a2 = a**2
-b2 = b**2
-print("Квадрат a = ", a2)
-print("Квадрат b = ", b2)
-print("Сумма квадратов: ", a2+b2)
-print("Разность квадратов: ", abs(a2-b2))
-print("Произведение квадратов: ", a2*b2)
-print("Частное квадратов: ", a2/b2)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+	double a,b,a2,b2,s,r,p,c;
+	cout << "Vvedite pervoe chislo: ";
+	cin >> a;
+	cout << "Vvedite vtoroe chislo: ";
+	cin >> b;
+	a2 = a*a;
+	b2 = b*b;
+	s = a2+b2;
+	r = abs(a2-b2);
+	p = a2*b2;
+	c = a2/b2;
+	cout << "Summa: " << s << endl;
+	cout << "Raznost': " << r << endl;
+	cout << "Proizvedenie: " << p << endl;
+	cout << "Chastnoe: " << c;
+	return 0;
+}
