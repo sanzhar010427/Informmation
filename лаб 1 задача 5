@@ -1,0 +1,21 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+	double a,b,a2,b2,s,r,p,c;
+	cout << "Vvedite pervoe chislo: ";
+	cin >> a;
+	cout << "Vvedite vtoroe chislo: ";
+	cin >> b;
+	a2 = abs(a);
+	b2 = abs(b);
+	s = a2+b2;
+	r = abs(a2-b2);
+	p = a2*b2;
+	c = a2/b2;
+	cout << "Summa: " << s << endl;
+	cout << "Raznost': " << r << endl;
+	cout << "Proizvedenie: " << p << endl;
+	cout << "Chastnoe: " << c;
+	return 0;
+}
