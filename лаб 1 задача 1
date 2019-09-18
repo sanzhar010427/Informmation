@@ -1,11 +1,14 @@
-import random
-
-a = random.randrange(1,10)
-print("Стороны прямоугольника")
-print("a = ", a)
-b = random.randrange(1,10)
-print("b = ", b)
-S = a * b
-print("Площадь прямоугольника S = ", S)
-P = 2 * (a + b)
-print("Периметр прямоугольника P = ", P)
+#include<iostream>
+using namespace std;
+int main(){
+	double a, b, s, p;
+	cout << "Vvedite storonu A: ";
+	cin >> a;
+	cout << "Vvedite storonu B: ";
+	cin >> b;
+	s = a*b;
+	p = (a+b)*2;
+	cout << "Ploshyad': " << s << endl;
+	cout << "Perimetr: " << p;
+	return 0;
+}
