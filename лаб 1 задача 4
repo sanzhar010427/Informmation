@@ -1,3 +1,6 @@
+Даны два ненулевых числа. Найти сумму, разность, произведение и
+частное их квадратов.
+
 #include <iostream>
 #include <cmath>
 using namespace std;
