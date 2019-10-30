@@ -1,28 +1,21 @@
 Даны три точки A, B, C на числовой оси. Найти длины отрезков AC
 и BC и их сумму.
 
-#include <stdio.h>
+#include <iostream>
 #include <math.h>
- 
-int main(void)
+#include <string>
+
+using namespace std;
+
+int main() 
 {
-    float A, B, C;
-    printf("A:");
-    scanf ("%f", &A);
- 
-    printf("B:");
-    scanf ("%f", &B);
- 
-    printf("C:");
-    scanf ("%f", &C);
- 
-    float AC = abs(A-C);
-    printf("AC:%f\n",AC);
- 
-    float BC = abs(B-C);
-    printf("BC:%f\n",BC);
- 
-    printf("AC+BC:%f\n",BC+AC);
- 
-    return 0;
+    float A, B, C, AC, BC, Sum;
+    cout << "Enter A, B, C : " << endl;
+    cin >> A >> B >> C;
+    AC = abs(A - C);
+    BC = abs(B - C);
+    Sum = AC + BC;
+    cout << "Length AC = " << AC << endl;
+    cout << "Length BC = " << BC << endl;
+    cout << "Sum AC and BC = " << Sum << endl;
 }
